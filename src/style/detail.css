@@ -1,0 +1,36 @@
+@charset "UTF-8";
+.pagination {
+  display: flex;
+  justify-content: flex-end; /* จัดปุ่มให้ไปอยู่ทางขวา */
+  align-items: center;
+  position: absolute; /* จัดตำแหน่งให้คงที่ */
+  right: 80px; /* ปรับระยะห่างจากขอบขวา */
+  bottom: 40px; /* ปรับระยะห่างจากขอบล่าง */
+  gap: 10px; /* เพิ่มระยะห่างระหว่างปุ่ม */
+}
+
+.pagination button {
+  background-color: #00ab58;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #6cdaa5;
+  color: #000;
+}
+
+.pagination span {
+  font-size: 16px;
+  margin-right: 10px;
+}/*# sourceMappingURL=detail.css.map */

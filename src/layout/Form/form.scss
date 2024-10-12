@@ -1,0 +1,108 @@
+:root {
+    --primaryColor: #00AB58;
+    --hoverColor: #6CDAA5;
+    --paleGreen: #009048;
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --textColor: hsl(240, 1%, 48%);
+    --greyText: hsl(0, 0%, 75%);
+    --bgColor: rgb(190, 190, 190);
+    --inputColor: hsl(330, 12%, 97%);
+
+    /*Font and Typography*/
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1.5rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .813rem;
+    --smallestFontSize: .75rem;
+}
+
+.containerAdd {
+    width: 82%;
+    height: 100%;
+    padding: 2rem;
+    overflow: auto;
+    background-color: #f4f7f9; /* เพิ่มสีพื้นหลัง */
+
+    .title {
+        font-size: var(--h1FontSize);
+        color: var(--blackColor);
+        margin-bottom: 1rem;
+    }
+
+    .subtitle {
+        font-size: var(--h2FontSize);
+        color: var(--textColor);
+        margin-bottom: 2rem;
+    }
+
+    .card {
+        .card-content {
+            padding: 1rem;
+
+            .content {
+                form {
+                    .ShowMessage {
+                        text-align: center;
+                        color: var(--paleGreen);
+                        margin-bottom: 1rem;
+                    }
+
+                    .field {
+                        margin-bottom: 1.5rem;
+
+                        .label {
+                            color: var(--blackColor);
+                            font-size: var(--normalFontSize);
+                            margin-bottom: 0.5rem;
+                            display: block;
+                        }
+
+                        .control {
+                            .input, .select select {
+                                width: 100%;
+                                padding: 0.75rem;
+                                border: 1px solid var(--greyText);
+                                border-radius: 4px;
+                                background-color: var(--inputColor);
+                                color: var(--textColor);
+                                font-size: var(--normalFontSize);
+
+                                &:focus {
+                                    outline: none;
+                                    border-color: var(--primaryColor);
+                                }
+                            }
+
+                            .select {
+                                width: 100%;
+
+                                &:after {
+                                    border-color: var(--primaryColor);
+                                }
+                            }
+
+                            .btn {
+                                background-color: var(--primaryColor);
+                                color: var(--whiteColor);
+                                border: none;
+                                padding: 0.75rem 1.5rem;
+                                font-size: var(--normalFontSize);
+                                cursor: pointer;
+                                transition: background-color 0.3s ease;
+                                width: 100%;
+                                border-radius: 4px;
+
+                                &:hover {
+                                    background-color: var(--hoverColor);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

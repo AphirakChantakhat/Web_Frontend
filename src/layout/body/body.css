@@ -1,0 +1,134 @@
+@charset "UTF-8";
+:root {
+  --primaryColor: #00AB58;
+  --hoverColor: #6CDAA5;
+  --paleGreen: #009048;
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --greyText: hsl(0, 0%, 75%);
+  --bgColor: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+  /*Font ang Typography*/
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.container {
+  width: 82%;
+  height: 100%;
+  padding: 2rem;
+  overflow: auto;
+  background-color: #f4f7f9; /* เพิ่มสีพื้นหลัง */
+  /* การตกแต่งตาราง */
+  /* การจัดการฟอนต์ใน container */
+  /* ปุ่มสำหรับการรับข้อมูลผู้ใช้ */
+}
+.container .icon {
+  font-size: 30px;
+  gap: 2rem;
+  margin-right: 10px;
+  align-items: center;
+}
+.container .icon-body {
+  font-size: 20px;
+  margin-right: 10px;
+  justify-content: space-between;
+  /* display: flex; */
+  align-items: center;
+}
+.container .btn {
+  background: var(--primaryColor);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 400;
+  transition: 0.3s ease;
+}
+.container .btn:hover {
+  background: #6CDAA5;
+  color: var(--blackColor);
+}
+.container .btnDelete {
+  background: #ff7575;
+  color: var(--blackColor);
+  padding: 12px 1rem;
+  border-radius: 10px;
+  font-weight: 400;
+  transition: 0.3s ease;
+  border: none; /* เอากรอบสีดำออก */
+}
+.container .btnDelete:hover {
+  background: #ffadad;
+  color: var(--blackColor);
+}
+.container .btnEdit {
+  background: #f9e27a;
+  color: var(--blackColor);
+  padding: 14.5px 1.55rem;
+  border-radius: 10px;
+  font-weight: 400;
+  transition: 0.3s ease;
+}
+.container .btnEdit:hover {
+  background: #faeeb5;
+  color: var(--blackColor);
+}
+.container .table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+  border-radius: 8px;
+  overflow: hidden;
+}
+.container .table th, .container .table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+.container .table th {
+  background-color: var(--primaryColor); /* หัวตารางสีเข้ม */
+  color: #fff;
+}
+.container .table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9; /* แถวพื้นหลังสลับสี */
+}
+.container .table tbody tr:hover {
+  background-color: #e0e0e0; /* เพิ่มเอฟเฟกต์ hover */
+}
+.container .bottom {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.container .bottom .button {
+  padding: 0.75rem 1.5rem;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.container .bottom .button:hover {
+  background-color: #2980b9;
+}
+.container h1 {
+  font-size: 2rem;
+  color: var(--paleGreen);
+  margin-bottom: 1.5rem;
+}
+.container .button.is-info {
+  background-color: #3498db;
+  color: #fff;
+}
+.container .button.is-info:hover {
+  background-color: #2980b9;
+}/*# sourceMappingURL=body.css.map */
